@@ -25,17 +25,20 @@ public class ExpandableListDataSource {
 
         List<String> filmGenres = Arrays.asList(context.getResources().getStringArray(R.array.sd_class_expandable_drawer));
 
-        List<String> actionFilms = Arrays.asList(context.getResources().getStringArray(R.array.actionFilms));
-        List<String> musicalFilms = Arrays.asList(context.getResources().getStringArray(R.array.musicals));
-        List<String> dramaFilms = Arrays.asList(context.getResources().getStringArray(R.array.dramas));
-        List<String> thrillerFilms = Arrays.asList(context.getResources().getStringArray(R.array.thrillers));
-        List<String> comedyFilms = Arrays.asList(context.getResources().getStringArray(R.array.comedies));
+        List<String> actionFilms = Arrays.asList(context.getResources().getStringArray(R.array.kelas1_item_array));
+        List<String> musicalFilms = Arrays.asList(context.getResources().getStringArray(R.array.kelas2_item_array));
+        List<String> dramaFilms = Arrays.asList(context.getResources().getStringArray(R.array.kelas3_item_array));
+        List<String> thrillerFilms = Arrays.asList(context.getResources().getStringArray(R.array.kelas4_item_array));
+        List<String> comedyFilms = Arrays.asList(context.getResources().getStringArray(R.array.kelas5_item_array));
+        List<String> comedyFilms2 = Arrays.asList(context.getResources().getStringArray(R.array.kelas6_item_array));
+
 
         expandableListData.put(filmGenres.get(0), actionFilms);
         expandableListData.put(filmGenres.get(1), musicalFilms);
         expandableListData.put(filmGenres.get(2), dramaFilms);
         expandableListData.put(filmGenres.get(3), thrillerFilms);
         expandableListData.put(filmGenres.get(4), comedyFilms);
+        expandableListData.put(filmGenres.get(5), comedyFilms2);
 
         return expandableListData;
     }

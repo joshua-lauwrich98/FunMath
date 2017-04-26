@@ -15,4 +15,6 @@ public interface NavigationManager {
     void showFragmentMusical(String title);
 
     void showFragmentThriller(String title);
+
+    void showFragmentSix(String title);
 }

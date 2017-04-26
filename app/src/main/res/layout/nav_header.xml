@@ -18,7 +18,7 @@
             android:id="@+id/filmIcon"
             android:layout_width="@dimen/header_img_size"
             android:layout_height="@dimen/header_img_size"
-            android:src="@drawable/icon_film"/>
+            android:src="@drawable/ic_launcher"/>
 
         <TextView
             android:id="@+id/date"

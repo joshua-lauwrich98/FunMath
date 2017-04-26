@@ -71,7 +71,7 @@ public class Main3Activity extends AppCompatActivity {
 
     private void selectFirstItemAsDefault() {
         if (mNavigationManager != null) {
-            String firstActionMovie = getResources().getStringArray(R.array.actionFilms)[0];
+            String firstActionMovie = getResources().getStringArray(R.array.kelas1_item_array)[0];
             mNavigationManager.showFragmentAction(firstActionMovie);
             getSupportActionBar().setTitle(firstActionMovie);
         }
@@ -134,7 +134,7 @@ public class Main3Activity extends AppCompatActivity {
             /** Called when a drawer has settled in a completely open state. */
             public void onDrawerOpened(View drawerView) {
                 super.onDrawerOpened(drawerView);
-                getSupportActionBar().setTitle(R.string.film_genres);
+                getSupportActionBar().setTitle(R.string.materi);
                 invalidateOptionsMenu(); // creates call to onPrepareOptionsMenu()
             }
 

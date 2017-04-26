@@ -8,6 +8,8 @@ import android.support.v4.app.FragmentTransaction;
 import com.ancovy.funmath.BuildConfig;
 import com.ancovy.funmath.R;
 import com.ancovy.funmath.activity.Main3Activity;
+import com.ancovy.funmath.fragment.FragmentAction;
+
 /**
  * @author msahakyan
  */
@@ -39,22 +41,27 @@ public class FragmentNavigationManager implements NavigationManager {
 
     @Override
     public void showFragmentComedy(String title) {
-        showFragment(FragmentComedy.newInstance(title), false);
+        showFragment(FragmentAction.newInstance(title), false);
     }
 
     @Override
     public void showFragmentDrama(String title) {
-        showFragment(FragmentDrama.newInstance(title), false);
+        showFragment(FragmentAction.newInstance(title), false);
     }
 
     @Override
     public void showFragmentMusical(String title) {
-        showFragment(FragmentMusical.newInstance(title), false);
+        showFragment(FragmentAction.newInstance(title), false);
     }
 
     @Override
     public void showFragmentThriller(String title) {
-        showFragment(FragmentThriller.newInstance(title), false);
+        showFragment(FragmentAction.newInstance(title), false);
+    }
+
+    @Override
+    public void showFragmentSix(String title) {
+        showFragment(FragmentAction.newInstance(title), false);
     }
 
     private void showFragment(Fragment fragment, boolean allowStateLoss) {

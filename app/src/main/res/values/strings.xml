@@ -3,6 +3,12 @@
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="title_activity_main2">FUN MATH</string>
+    <string name="date"> 27 Apr 2017 </string>
+    <string name="website"> Joshua and Jason</string>
+    <string name="materi"> Materi </string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="bab"> Bab </string>
 
     <string-array name="sd_class_expandable_drawer">
         <item> Kelas 1 </item>
@@ -17,6 +23,62 @@
         <item> Kelas 1 </item>
         <item> Kelas 2 </item>
         <item> Kelas 3 </item>
+    </string-array>
+
+    <string-array name="kelas1_item_array">
+        <item> Bilangan Cacah </item>
+        <item> Lambang Bilangan </item>
+        <item> Urutan Bilangan </item>
+        <item> Pola Bilangan </item>
+        <item> Bangun Datar </item>
+        <item> Bangun Ruang </item>
+        <item> Panjang, Berat, dan Waktu </item>
+    </string-array>
+
+    <string-array name="kelas2_item_array">
+        <item> Makna Lambang Bilangan </item>
+        <item> Membandingkan dan Mengurutkan Bilangan </item>
+        <item> Penjumlahan dan Pengurangan </item>
+        <item> Perkalian dan Pembagian </item>
+        <item> Uang </item>
+        <item> Satuan Baku </item>
+        <item> Pecahan </item>
+    </string-array>
+
+    <string-array name="kelas3_item_array">
+        <item> Sifat Operasi Hitung </item>
+        <item> Garis Bilangan </item>
+        <item> Operasi Hitung Pada Pecahan </item>
+        <item> Satuan Tidak Baku </item>
+        <item> Simetri </item>
+        <item> Keliling Bangun Datar </item>
+        <item> Sudut </item>
+    </string-array>
+
+    <string-array name="kelas4_item_array">
+        <item> Pecahan Senilai </item>
+        <item> Desimal dan Persen </item>
+        <item> Faktor dan Kelipatan </item>
+        <item> Bilangan Prima </item>
+        <item> FPB dan KPK </item>
+        <item> Pembulatan </item>
+        <item> Segi Banyak </item>
+    </string-array>
+
+    <string-array name="kelas5_item_array">
+        <item> Pangkat dan Akar </item>
+        <item> Operasi Hitung Pecahan </item>
+        <item> Jarak, Waktu, dan Kecepatan </item>
+        <item> Posisi Benda Terhadap Mata Angin </item>
+        <item> Volume </item>
+    </string-array>
+
+    <string-array name="kelas6_item_array">
+        <item> Bilangan Bulat Negatif </item>
+        <item> Operasi Hitung Pada Bilangan Negatif </item>
+        <item> Lingkaran </item>
+        <item> Diagonal Bidang dan Ruang </item>
+        <item> Ukuran Pemusatan Data Tunggal </item>
     </string-array>
 
     <string-array name="school_array_acc_type">

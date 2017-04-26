@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "178582117536",
+    "firebase_url": "https://fun-math-b272b.firebaseio.com",
+    "project_id": "fun-math-b272b",
+    "storage_bucket": "fun-math-b272b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:178582117536:android:121eb757cabe1136",
+        "android_client_info": {
+          "package_name": "com.ancovy.funmath"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "178582117536-vt2mphsk3is3j2mvnd4li0lvlg21ke6s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ancovy.funmath",
+            "certificate_hash": "4b6dcc89be6ca35601f6992d39f4caf0ec0d1b6d"
+          }
+        },
+        {
+          "client_id": "178582117536-ls8u05af36qart99lsgd6htjbl8d6pnp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAb3HOWs1KWpHD85eDKFPl-i5Nkvb9-GIo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "178582117536-ls8u05af36qart99lsgd6htjbl8d6pnp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

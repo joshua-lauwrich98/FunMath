@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/AppTheme.NoTitle"
+    android:background="@drawable/background_sign_in">
+
+    <com.ancovy.funmath.other.SimplificaFontTextView
+        android:layout_width="wrap_content"
+        android:padding="15dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:inputType="none"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Pilih tipe akun anda"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:textSize="30sp"
+        android:textAllCaps="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/background_button_sign_up"
+        android:id="@+id/layout_account_type">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/account_type_container"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:text=""
+        android:layout_below="@id/layout_account_type"/>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/layout_account_type"
+        android:id="@+id/space_account_type"/>
+    
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/layout_account_type"
+        android:layout_alignLeft="@id/layout_account_type"
+        android:layout_toLeftOf="@id/space_account_type"
+        android:backgroundTint="@color/white"
+        android:layout_above="@id/layout_account_type"
+        android:text="MURID"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/student_background_edit_text"
+        android:inputType="none"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/layout_account_type"
+        android:layout_alignRight="@id/layout_account_type"
+        android:layout_toRightOf="@id/space_account_type"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_above="@id/layout_account_type"
+        android:text="GURU"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/teacher_background_edit_text"
+        android:inputType="none"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/layout_account_type"
+        android:layout_alignRight="@id/layout_account_type"
+        android:layout_toRightOf="@id/space_account_type"
+        android:background="@android:color/transparent"
+        android:layout_above="@id/layout_account_type"
+        android:id="@+id/teacher_type_button"
+        android:layout_marginBottom="5dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="Sudah punya akun ?"
+        android:textAppearance="@style/CustomFont"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:id="@+id/alreadyHaveAnAccount_button_next"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/alreadyHaveAnAccount_button_next"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_button_sign_in"
+        android:text="Daftar"
+        android:textColor="@color/white"
+        android:textAppearance="@style/CustomFont"
+        android:textSize="15sp"
+        android:id="@+id/signup_button"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_toLeftOf="@id/space_account_type"
+        android:id="@+id/student_type_button"
+        android:layout_alignBaseline="@+id/student_background_edit_text"
+        android:layout_alignBottom="@+id/student_background_edit_text"
+        android:layout_alignStart="@+id/student_background_edit_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/layout_account_type"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:id="@+id/notes_textview_signup_next"
+        android:paddingStart="30dp"
+        android:paddingLeft="30dp"
+        android:paddingEnd="30dp"
+        android:paddingRight="30dp"
+        android:textAlignment="center"/>
+
+</RelativeLayout>

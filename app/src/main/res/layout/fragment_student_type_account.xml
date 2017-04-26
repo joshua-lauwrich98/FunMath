@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@android:color/transparent"
+    android:layout_gravity="center"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="5dp"
+        android:id="@+id/layout_student_acc_type">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tingkat Sekolah *"
+            android:textSize="15sp"
+            android:textColor="@color/white"/>
+
+        <android.support.v4.widget.Space
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tingkat Kelas *"
+            android:textSize="15sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:layout_below="@id/layout_student_acc_type">
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/school_type_spinner"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:backgroundTint="@color/white">
+        </Spinner>
+
+        <android.support.v4.widget.Space
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/grade_spinner"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:backgroundTint="@color/white">
+        </Spinner>
+
+    </LinearLayout>
+</RelativeLayout>

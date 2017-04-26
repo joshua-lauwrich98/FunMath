@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Fun Math</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_main2">FUN MATH</string>
+
+    <string-array name="sd_class_expandable_drawer">
+        <item> Kelas 1 </item>
+        <item> Kelas 2 </item>
+        <item> Kelas 3 </item>
+        <item> Kelas 4 </item>
+        <item> Kelas 5 </item>
+        <item> Kelas 6 </item>
+    </string-array>
+
+    <string-array name="smpsma_class_expandable_drawer">
+        <item> Kelas 1 </item>
+        <item> Kelas 2 </item>
+        <item> Kelas 3 </item>
+    </string-array>
+
+    <string-array name="school_array_acc_type">
+        <item> SD </item>
+        <item> SMP </item>
+        <item> SMA </item>
+    </string-array>
+
+    <string-array name="grade_array_acc_type_SD">
+        <item> 1 </item>
+        <item> 2 </item>
+        <item> 3 </item>
+        <item> 4 </item>
+        <item> 5 </item>
+        <item> 6 </item>
+    </string-array>
+
+    <string-array name="grade_array_acc_type_SMP_SMA">
+        <item> 1 </item>
+        <item> 2 </item>
+        <item> 3 </item>
+    </string-array>
+
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_main3">Main3Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>

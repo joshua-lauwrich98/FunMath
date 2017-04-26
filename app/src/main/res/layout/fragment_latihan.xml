@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_sign_in">
+
+    <com.ancovy.funmath.other.LemonMilkFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:text="PILIH JENJANG"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginStart="65dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <com.ancovy.funmath.other.PiratePlunderFontButton
+            android:layout_width="125dp"
+            android:layout_height="100dp"
+            android:background="@drawable/background_button_personal"
+            android:text="SD"
+            android:textColor="@color/white"
+            android:padding="30dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:id="@+id/sd_button_personal_latihan"/>
+
+        <android.support.v4.widget.Space
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:id="@+id/space_personal_main"
+            android:layout_centerInParent="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <com.ancovy.funmath.other.PiratePlunderFontButton
+                android:layout_width="125dp"
+                android:layout_height="100dp"
+                android:background="@drawable/background_button_personal"
+                android:text="SMP"
+                android:textColor="@color/white"
+                android:padding="20sp"
+                android:layout_centerHorizontal="true"
+                android:textSize="25sp"
+                android:id="@+id/smp_button_personal_latihan"/>
+
+            <android.support.v4.widget.Space
+                android:layout_width="20dp"
+                android:layout_height="50dp"
+                android:id="@+id/space2_personal_main"
+                android:layout_centerInParent="true"/>
+
+            <com.ancovy.funmath.other.PiratePlunderFontButton
+                android:layout_width="125dp"
+                android:layout_height="100dp"
+                android:background="@drawable/background_button_personal"
+                android:text="SMA"
+                android:textColor="@color/white"
+                android:padding="20sp"
+                android:layout_centerHorizontal="true"
+                android:textSize="25sp"
+                android:id="@+id/sma_button_personal_latihan"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

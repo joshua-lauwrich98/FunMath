@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_sign_in">
+
+    <com.ancovy.funmath.other.LemonMilkFontTextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:textSize="30sp"
+    android:text="PILIH MODE"
+    android:textColor="@color/white"/>
+
+    <android.support.v4.widget.Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/space_play"/>
+
+    <com.ancovy.funmath.other.PiratePlunderFontButton
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#00000000"
+        android:text="PVP"
+        android:textColor="@color/white"
+        android:padding="30dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:id="@+id/pvp_button_play"
+        android:layout_above="@id/space_play"/>
+
+    <com.ancovy.funmath.other.PiratePlunderFontButton
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/background_button_play"
+        android:text="Bermain Bersama Teman"
+        android:textColor="@color/white"
+        android:padding="30dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:id="@+id/with_friend_button_play"
+        android:layout_below="@id/space_play"/>
+
+</RelativeLayout>

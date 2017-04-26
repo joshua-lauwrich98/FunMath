@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/AppTheme.NoTitle"
+    android:background="@drawable/background_sign_in">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="textPassword"
+        android:backgroundTint="@color/white"
+        android:id="@+id/sign_up_password_input"
+        android:padding="10dp"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/sign_up_password_input"
+        android:text="Kata Sandi"
+        android:textColor="@color/white"
+        android:textAppearance="@style/CustomFont"
+        android:textSize="17sp"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/password_sign_up_textview"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="textEmailAddress"
+        android:backgroundTint="@color/white"
+        android:id="@+id/sign_up_email_input"
+        android:padding="10dp"
+        android:layout_above="@+id/password_sign_up_textview"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/sign_up_email_input"
+        android:text="Email"
+        android:textColor="@color/white"
+        android:textAppearance="@style/CustomFont"
+        android:textSize="17sp"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/email_sign_up_textview"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="textPassword"
+        android:backgroundTint="@color/white"
+        android:id="@+id/sign_up_full_name_input"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:layout_above="@id/email_sign_up_textview"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/CustomFont"
+        android:text="Nama Lengkap"
+        android:textColor="@color/white"
+        android:layout_above="@id/sign_up_full_name_input"
+        android:layout_marginLeft="70dp"
+        android:layout_marginStart="70dp"
+        android:textSize="17sp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/visibility_icon"
+        android:background="@android:color/transparent"
+        android:layout_below="@id/password_sign_up_textview"
+        android:layout_alignEnd="@id/sign_up_password_input"
+        android:tint="@color/white"
+        android:id="@+id/hide_or_show_password_signup_input"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_up_password_input"
+        android:text="Username"
+        android:textColor="@color/white"
+        android:textAppearance="@style/CustomFont"
+        android:textSize="17sp"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/username_sign_up_textview"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="textPersonName"
+        android:backgroundTint="@color/white"
+        android:id="@+id/sign_up_username_input"
+        android:padding="10dp"
+        android:layout_below="@id/username_sign_up_textview"
+        android:textAlignment="center"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_button_sign_up"
+        android:text="Selanjutnya"
+        android:textColor="@color/white"
+        android:textAppearance="@style/CustomFont"
+        android:textSize="15sp"
+        android:id="@+id/next_sign_up_button"
+        android:layout_below="@id/sign_up_username_input"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="Sudah punya akun ?"
+        android:layout_marginRight="15dp"
+        android:textAppearance="@style/CustomFont"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:id="@+id/alreadyHaveAnAccount_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/next_sign_up_button"
+        android:layout_marginTop="20dp"
+        android:text="* Tolong isi semua bagian"
+        android:textColor="#ff4326"
+        android:visibility="invisible"
+        android:id="@+id/error_textview_sign_up"/>
+
+    <com.ancovy.funmath.other.SimplificaFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:inputType="none"
+        android:text="Buat Akun Anda"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:textSize="30sp"
+        android:textAllCaps="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/alreadyHaveAnAccount_button"
+        android:id="@+id/textView"
+        android:layout_marginTop="15dp"/>
+
+</RelativeLayout>

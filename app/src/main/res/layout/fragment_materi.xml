@@ -4,6 +4,17 @@
     android:layout_height="match_parent"
     android:background="@drawable/background_sign_in">
 
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_back_icon"
+        android:background="#00000000"
+        android:scaleType="fitCenter"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/back_button_materi"/>
+
     <com.ancovy.funmath.other.LemonMilkFontTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -40,44 +51,35 @@
             android:id="@+id/space_personal_main"
             android:layout_centerInParent="true"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="center"
-            android:gravity="center">
+        <com.ancovy.funmath.other.PiratePlunderFontButton
+            android:layout_width="125dp"
+            android:layout_height="100dp"
+            android:background="@drawable/background_button_personal"
+            android:text="SMP"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:padding="20sp"
+            android:layout_centerHorizontal="true"
+            android:textSize="25sp"
+            android:id="@+id/smp_button_personal_materi"/>
 
-            <com.ancovy.funmath.other.PiratePlunderFontButton
-                android:layout_width="125dp"
-                android:layout_height="100dp"
-                android:background="@drawable/background_button_personal"
-                android:text="SMP"
-                android:textColor="@color/white"
-                android:textAlignment="center"
-                android:padding="20sp"
-                android:layout_centerHorizontal="true"
-                android:textSize="25sp"
-                android:id="@+id/smp_button_personal_materi"/>
+        <android.support.v4.widget.Space
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:id="@+id/space2_personal_main"
+            android:layout_centerInParent="true"/>
 
-            <android.support.v4.widget.Space
-                android:layout_width="20dp"
-                android:layout_height="50dp"
-                android:id="@+id/space2_personal_main"
-                android:layout_centerInParent="true"/>
-
-            <com.ancovy.funmath.other.PiratePlunderFontButton
-                android:layout_width="125dp"
-                android:layout_height="100dp"
-                android:background="@drawable/background_button_personal"
-                android:text="SMA"
-                android:textColor="@color/white"
-                android:padding="20sp"
-                android:layout_centerHorizontal="true"
-                android:textSize="25sp"
-                android:id="@+id/sma_button_personal_materi"
-                android:textAlignment="center"/>
-
-        </LinearLayout>
+        <com.ancovy.funmath.other.PiratePlunderFontButton
+            android:layout_width="125dp"
+            android:layout_height="100dp"
+            android:background="@drawable/background_button_personal"
+            android:text="SMA"
+            android:textColor="@color/white"
+            android:padding="20sp"
+            android:layout_centerHorizontal="true"
+            android:textSize="25sp"
+            android:id="@+id/sma_button_personal_materi"
+            android:textAlignment="center"/>
     </LinearLayout>
 
 </RelativeLayout>

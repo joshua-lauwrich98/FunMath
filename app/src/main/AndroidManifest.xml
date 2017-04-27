@@ -29,7 +29,8 @@
         <activity
             android:name=".activity.LoginActivity"
             android:theme="@style/AppTheme.NoTitle" />
-        <activity android:name=".activity.Main3Activity"></activity>
+        <activity android:name=".activity.Main3Activity"/>
+        <activity android:name=".activity.Main4Activity"/>
     </application>
 
 </manifest>

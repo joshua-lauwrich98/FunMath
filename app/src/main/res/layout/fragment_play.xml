@@ -5,13 +5,14 @@
     android:background="@drawable/background_sign_in">
 
     <com.ancovy.funmath.other.LemonMilkFontTextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_centerHorizontal="true"
-    android:layout_marginTop="20dp"
-    android:textSize="30sp"
-    android:text="PILIH MODE"
-    android:textColor="@color/white"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:text="PILIH MODE"
+        android:textColor="@color/white"
+        android:id="@+id/textView_play_mode"/>
 
     <android.support.v4.widget.Space
         android:layout_width="wrap_content"
@@ -20,27 +21,49 @@
         android:id="@+id/space_play"/>
 
     <com.ancovy.funmath.other.PiratePlunderFontButton
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="#00000000"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_text_circle"
         android:text="PVP"
         android:textColor="@color/white"
-        android:padding="30dp"
-        android:layout_centerHorizontal="true"
-        android:textSize="25sp"
+        android:padding="20dp"
+        android:layout_below="@id/textView_play_mode"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="12sp"
         android:id="@+id/pvp_button_play"
-        android:layout_above="@id/space_play"/>
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="30dp"/>
 
     <com.ancovy.funmath.other.PiratePlunderFontButton
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@drawable/background_button_play"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:background="@drawable/bg_text_circle"
         android:text="Bermain Bersama Teman"
         android:textColor="@color/white"
-        android:padding="30dp"
-        android:layout_centerHorizontal="true"
-        android:textSize="25sp"
+        android:padding="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:textSize="12sp"
         android:id="@+id/with_friend_button_play"
-        android:layout_below="@id/space_play"/>
+        android:layout_below="@id/pvp_button_play"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"/>
+
+    <com.ancovy.funmath.other.PiratePlunderFontButton
+        android:layout_width="165dp"
+        android:layout_height="165dp"
+        android:background="@drawable/bg_text_circle"
+        android:text="Papan Peringkat"
+        android:textColor="@color/white"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:padding="20dp"
+        android:textSize="12sp"
+        android:id="@+id/leaderboard_button_play"
+        android:layout_below="@id/with_friend_button_play"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp"/>
 
 </RelativeLayout>

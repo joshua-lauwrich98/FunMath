@@ -24,6 +24,11 @@
         <item name="android:windowFullscreen">true</item>
     </style>
 
+    <style name="AppTheme.NoTitle2" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
     <style name="Theme.FullScreen" parent="@android:style/Theme.NoTitleBar.Fullscreen" />
 
     <style name="AppTabLayout" parent="Widget.Design.TabLayout">
@@ -56,6 +61,7 @@
     <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
         <item name="android:textSize">20sp</item>
         <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">SIMPLIFICA Typeface.ttf</item>
     </style>
 
 </resources>

@@ -40,57 +40,119 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center_horizontal"
-            android:paddingBottom="30dp"
-            android:paddingEnd="50dp"
-            android:paddingLeft="50dp"
-            android:paddingRight="50dp"
-            android:paddingStart="50dp"
-            android:paddingTop="30dp"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/profile_choices_layout"
+            android:layout_gravity="center"
+            android:gravity="center">
 
-            <com.ancovy.funmath.other.LemonMilkFontButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableEnd="@drawable/ic_chevron_right"
-                android:background="@drawable/profil_action"
-                android:text="Statistik"
-                android:textColor="@color/white"
-                android:textAlignment="viewStart"
-                android:paddingStart="30dp"
-                android:paddingLeft="30dp"
-                android:textSize="18sp"
-                android:id="@+id/statistic_button_profile"/>
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_group_add_black_24dp"
+                android:scaleType="fitCenter"/>
 
-            <com.ancovy.funmath.other.LemonMilkFontButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableEnd="@drawable/ic_chevron_right"
-                android:background="@drawable/profil_action"
-                android:text="Tambah Teman"
-                android:textColor="@color/white"
-                android:textAlignment="viewStart"
-                android:paddingStart="30dp"
-                android:textSize="18sp"
-                android:paddingLeft="30dp"
-                android:layout_marginTop="10dp"
-                android:id="@+id/add_friend_button_profile"/>
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_perm_identity_black_24dp"
+                android:scaleType="fitCenter" />
 
-            <com.ancovy.funmath.other.LemonMilkFontButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableEnd="@drawable/ic_chevron_right"
-                android:background="@drawable/profil_action"
-                android:text="Pengaturan"
-                android:textColor="@color/white"
-                android:textSize="18sp"
-                android:textAlignment="viewStart"
-                android:paddingStart="30dp"
-                android:paddingLeft="30dp"
-                android:layout_marginTop="10dp"
-                android:id="@+id/settings_button_profile"/>
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/statistic"
+                android:scaleType="fitCenter" />
 
         </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:id="@+id/profile_choices_layout"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:gravity="center">-->
+
+            <!--<Button-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:text="Teman"/>-->
+
+            <!--<Button-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:text="Profil"/>-->
+
+            <!--<Button-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:text="Statistik"/>-->
+
+        <!--</LinearLayout>-->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_button_personal"
+            android:layout_marginTop="20dp"
+            android:id="@+id/profile_detail_container">
+
+        </FrameLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:paddingBottom="30dp"-->
+            <!--android:paddingEnd="50dp"-->
+            <!--android:paddingLeft="50dp"-->
+            <!--android:paddingRight="50dp"-->
+            <!--android:paddingStart="50dp"-->
+            <!--android:paddingTop="30dp"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<com.ancovy.funmath.other.LemonMilkFontButton-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:drawableEnd="@drawable/ic_chevron_right"-->
+                <!--android:background="@drawable/profil_action"-->
+                <!--android:text="Statistik"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textAlignment="viewStart"-->
+                <!--android:paddingStart="30dp"-->
+                <!--android:paddingLeft="30dp"-->
+                <!--android:textSize="18sp"-->
+                <!--android:id="@+id/statistic_button_profile"/>-->
+
+            <!--<com.ancovy.funmath.other.LemonMilkFontButton-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:drawableEnd="@drawable/ic_chevron_right"-->
+                <!--android:background="@drawable/profil_action"-->
+                <!--android:text="Tambah Teman"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textAlignment="viewStart"-->
+                <!--android:paddingStart="30dp"-->
+                <!--android:textSize="18sp"-->
+                <!--android:paddingLeft="30dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:id="@+id/add_friend_button_profile"/>-->
+
+            <!--<com.ancovy.funmath.other.LemonMilkFontButton-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:drawableEnd="@drawable/ic_chevron_right"-->
+                <!--android:background="@drawable/profil_action"-->
+                <!--android:text="Pengaturan"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="18sp"-->
+                <!--android:textAlignment="viewStart"-->
+                <!--android:paddingStart="30dp"-->
+                <!--android:paddingLeft="30dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:id="@+id/settings_button_profile"/>-->
+
+        <!--</LinearLayout>-->
     </LinearLayout>
 </RelativeLayout>

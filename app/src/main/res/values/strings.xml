@@ -19,12 +19,6 @@
         <item> Kelas 6 </item>
     </string-array>
 
-    <string-array name="smpsma_class_expandable_drawer">
-        <item> Kelas 1 </item>
-        <item> Kelas 2 </item>
-        <item> Kelas 3 </item>
-    </string-array>
-
     <string-array name="kelas1_item_array">
         <item> Bilangan Cacah </item>
         <item> Lambang Bilangan </item>
@@ -79,6 +73,36 @@
         <item> Lingkaran </item>
         <item> Diagonal Bidang dan Ruang </item>
         <item> Ukuran Pemusatan Data Tunggal </item>
+    </string-array>
+
+    <string-array name="smpsma_class_expandable_drawer">
+        <item> Kelas 1 </item>
+        <item> Kelas 2 </item>
+        <item> Kelas 3 </item>
+    </string-array>
+
+    <string-array name="kelas7_item_array">
+        <item> Bilangan </item>
+        <item> Aljabar </item>
+        <item> Pertidaksamaan Linear </item>
+        <item> Himpunan </item>
+        <item> Garis dan Sudut </item>
+    </string-array>
+
+    <string-array name="kelas8_item_array">
+        <item> Relasi dan Fungsi </item>
+        <item> SPLDV </item>
+        <item> Teorema Pythagoras </item>
+        <item> Lingkaran </item>
+        <item> Kubus, Balok, Limas, dan Prisma </item>
+    </string-array>
+
+    <string-array name="kelas9_item_array">
+        <item> Kesebangunan </item>
+        <item> Tabung, Kerucut, dan Bola </item>
+        <item> Statistika </item>
+        <item> Peluang </item>
+        <item> Barisan dan Deret </item>
     </string-array>
 
     <string-array name="school_array_acc_type">

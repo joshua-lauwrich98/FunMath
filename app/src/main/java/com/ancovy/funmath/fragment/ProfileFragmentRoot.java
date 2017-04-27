@@ -20,7 +20,7 @@ public class ProfileFragmentRoot extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_profile_root, container, false);
 
-        getFragmentManager().beginTransaction().replace(R.id.profil_container, new ProfileFragment()).commit();
+        getFragmentManager().beginTransaction().replace(R.id.profile_container, new ProfileFragment()).commit();
 
         return view;
     }

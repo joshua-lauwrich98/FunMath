@@ -16,8 +16,8 @@ import android.widget.ExpandableListView;
 
 import com.ancovy.funmath.R;
 import com.ancovy.funmath.adapter.CustomExpandableListAdapter;
-import com.ancovy.funmath.datasource.ExpandableListDataSource;
-import com.ancovy.funmath.fragment.navigation.FragmentNavigationManager;
+import com.ancovy.funmath.datasource.ExpandableListDataSource2;
+import com.ancovy.funmath.fragment.navigation.FragmentNavigationManager2;
 import com.ancovy.funmath.fragment.navigation.NavigationManager;
 
 import java.util.ArrayList;
@@ -25,7 +25,7 @@ import java.util.List;
 import java.util.Map;
 
 
-public class Main3Activity extends AppCompatActivity {
+public class Main4Activity extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mDrawerToggle;
@@ -48,7 +48,7 @@ public class Main3Activity extends AppCompatActivity {
         mActivityTitle = getTitle().toString();
 
         mExpandableListView = (ExpandableListView) findViewById(R.id.navList);
-        mNavigationManager = FragmentNavigationManager.obtain(this);
+        mNavigationManager = FragmentNavigationManager2.obtain(this);
 
         initItems();
 
@@ -56,7 +56,7 @@ public class Main3Activity extends AppCompatActivity {
         View listHeaderView = inflater.inflate(R.layout.nav_header, null, false);
         mExpandableListView.addHeaderView(listHeaderView);
 
-        mExpandableListData = ExpandableListDataSource.getData(this);
+        mExpandableListData = ExpandableListDataSource2.getData(this);
         mExpandableListTitle = new ArrayList(mExpandableListData.keySet());
 
         addDrawerItems();
@@ -72,14 +72,14 @@ public class Main3Activity extends AppCompatActivity {
 
     private void selectFirstItemAsDefault() {
         if (mNavigationManager != null) {
-            String firstActionMovie = getResources().getStringArray(R.array.kelas1_item_array)[0];
+            String firstActionMovie = getResources().getStringArray(R.array.kelas7_item_array)[0];
             mNavigationManager.showFragmentAction(firstActionMovie);
             getSupportActionBar().setTitle("FunMath");
         }
     }
 
     private void initItems() {
-        items = getResources().getStringArray(R.array.sd_class_expandable_drawer);
+        items = getResources().getStringArray(R.array.smpsma_class_expandable_drawer);
     }
 
     private void addDrawerItems() {
@@ -95,7 +95,7 @@ public class Main3Activity extends AppCompatActivity {
         mExpandableListView.setOnGroupCollapseListener(new ExpandableListView.OnGroupCollapseListener() {
             @Override
             public void onGroupCollapse(int groupPosition) {
-                getSupportActionBar().setTitle("Materi");
+                getSupportActionBar().setTitle("Latihan");
             }
         });
 
@@ -189,6 +189,6 @@ public class Main3Activity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        startActivity(new Intent(Main3Activity.this, MainActivity2.class));
+        startActivity(new Intent(Main4Activity.this, MainActivity2.class));
     }
 }

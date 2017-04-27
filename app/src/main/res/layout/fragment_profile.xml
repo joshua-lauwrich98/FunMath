@@ -21,7 +21,8 @@
                 android:layout_height="75dp"
                 android:background="@drawable/profil_select_photo"
                 android:id="@+id/choose_profil_image_button"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginRight="10dp"
+                android:scaleType="fitCenter"/>
 
             <com.ancovy.funmath.other.LemonMilkFontTextView
                 android:layout_width="match_parent"
@@ -35,7 +36,8 @@
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 android:background="@drawable/profil_action"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                android:id="@+id/username_profil_textview"/>
         </LinearLayout>
 
         <LinearLayout

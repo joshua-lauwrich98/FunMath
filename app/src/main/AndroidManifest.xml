@@ -31,6 +31,8 @@
             android:theme="@style/AppTheme.NoTitle" />
         <activity android:name=".activity.Main3Activity"/>
         <activity android:name=".activity.Main4Activity"/>
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat"/>
     </application>
 
 </manifest>

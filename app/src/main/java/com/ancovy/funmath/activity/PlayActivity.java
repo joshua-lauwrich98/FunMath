@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.ancovy.funmath.R;
+import com.ancovy.funmath.fragment.PVPKlasikPlayActi;
 
 public class PlayActivity extends AppCompatActivity {
 
@@ -15,5 +16,16 @@ public class PlayActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         String status = intent.getStringExtra("jenis");
+
+        if (status.equals("clasic")) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.play_activity_container, new PVPKlasikPlayActi()).commit();
+        }
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+
+        startActivity(new Intent(this, MainActivity2.class));
     }
 }

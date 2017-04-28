@@ -104,6 +104,7 @@ public class SignUpFragmentNext extends Fragment implements View.OnClickListener
                             firebaseDatabase.child("fullname").setValue(fullname);
                             firebaseDatabase.child("username").setValue(username);
                             firebaseDatabase.child("accType").setValue(accType);
+                            firebaseDatabase.child("poin").setValue("0");
                             if (accType.equals("student")) {
                                 firebaseDatabase.child("school").setValue(school);
                                 firebaseDatabase.child("grade").setValue(grade);

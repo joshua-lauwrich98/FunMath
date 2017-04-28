@@ -74,7 +74,9 @@ public class CustomAlertDialogKlasikPVPFindOpponent {
                         @Override
                         public void onFinish() {
                             if (abandon) {
-                                activity.startActivity(new Intent(activity, PlayActivity.class));
+                                Intent intent = new Intent(activity, PlayActivity.class);
+                                intent.putExtra("jenis", "clasic");
+                                activity.startActivity(intent);
                                 activity.finish();
                                 dialog.dismiss();
                             } else {

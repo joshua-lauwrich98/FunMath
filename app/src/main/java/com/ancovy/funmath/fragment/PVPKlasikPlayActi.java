@@ -24,11 +24,11 @@ public class PVPKlasikPlayActi extends Fragment {
 
         final TextView text = (TextView)view.findViewById(R.id.text_countdown_acti_play);
 
-        new CountDownTimer(4000, 1000) {
+        new CountDownTimer(5000, 1000) {
 
             @Override
             public void onTick(long l) {
-                if (l != 1000) {
+                if (l > 1000) {
                     text.setText((l / 1000) - 1 + "");
                 } else {
                     text.setTextSize(25);
@@ -38,9 +38,9 @@ public class PVPKlasikPlayActi extends Fragment {
 
             @Override
             public void onFinish() {
-                
+                getFragmentManager().beginTransaction().replace(R.id.play_activity_container, new PVPKlasikSoalPlayActi1Fragment()).commit();
             }
-        };
+        }.start();
 
         return view;
     }

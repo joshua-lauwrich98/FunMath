@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     style="@style/AppTheme.NoTitle"
@@ -76,7 +75,7 @@
         android:layout_marginRight="50dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        android:inputType="textPassword"
+        android:inputType="textPersonName"
         android:backgroundTint="@color/white"
         android:id="@+id/sign_up_full_name_input"
         android:padding="10dp"
@@ -97,7 +96,7 @@
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/visibility_icon"
+        android:src="@drawable/visibility_icon"
         android:background="@android:color/transparent"
         android:layout_below="@id/password_sign_up_textview"
         android:layout_alignEnd="@id/sign_up_password_input"

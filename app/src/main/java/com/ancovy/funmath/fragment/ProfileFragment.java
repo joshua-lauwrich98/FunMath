@@ -8,6 +8,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -66,6 +67,17 @@ public class ProfileFragment extends Fragment implements View.OnClickListener {
             }
         });
 
+        ImageButton friend = (ImageButton) view.findViewById(R.id.friend_list_button_profile);
+        ImageButton profile = (ImageButton) view.findViewById(R.id.statistic_button_profile);
+        ImageButton statistic = (ImageButton) view.findViewById(R.id.own_profile_button_profle);
+
+        friend.setOnClickListener(this);
+        profile.setOnClickListener(this);
+        statistic.setOnClickListener(this);
+
+
+        getChildFragmentManager().beginTransaction().replace(R.id.profile_detail_container, new FriendListProfileFragment()).commit();
+
         return view;
     }
 
@@ -81,6 +93,9 @@ public class ProfileFragment extends Fragment implements View.OnClickListener {
                 CustomAlertDialogProfileUsernameEdit dialog = new CustomAlertDialogProfileUsernameEdit();
                 dialog.showDialog(getActivity(), usernameText);
                 databaseReference.child("username").setValue(usernameText);
+                break;
+            case R.id.friend_list_button_profile :
+                getChildFragmentManager().beginTransaction().replace(R.id.profile_detail_container, new FriendListProfileFragment()).commit();
                 break;
         }
     }

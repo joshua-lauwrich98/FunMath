@@ -6,8 +6,8 @@
     android:padding="20dp">
 
     <Button
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
         android:layout_centerInParent="true"
         android:layout_alignParentLeft="true"
         android:id="@+id/pilihan_1_pvp_klasik_play2"
@@ -17,8 +17,8 @@
         android:gravity="center"/>
 
     <Button
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
         android:layout_centerInParent="true"
         android:layout_alignParentRight="true"
         android:id="@+id/pilihan_2_pvp_klasik_play2"
@@ -28,8 +28,8 @@
         android:gravity="center"/>
 
     <Button
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
         android:layout_alignParentLeft="true"
         android:id="@+id/pilihan_3_pvp_klasik_play2"
         android:layout_below="@id/pilihan_1_pvp_klasik_play2"
@@ -40,8 +40,8 @@
         android:gravity="center"/>
 
     <Button
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
         android:layout_alignParentRight="true"
         android:id="@+id/pilihan_4_pvp_klasik_play2"
         android:layout_below="@id/pilihan_2_pvp_klasik_play2"

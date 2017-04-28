@@ -31,7 +31,7 @@
                 android:layout_height="100dp"
                 android:layout_marginTop="30dp"
                 android:textColor="@color/white"
-                android:textSize="40sp"
+                android:textSize="35sp"
                 android:id="@+id/my_username_result_clasic"/>
 
         </LinearLayout>
@@ -62,8 +62,9 @@
                 android:layout_height="100dp"
                 android:layout_marginTop="30dp"
                 android:textColor="@color/white"
-                android:textSize="25sp"
-                android:text="username"/>
+                android:textSize="35sp"
+                android:text="username"
+                android:textAlignment="center"/>
 
         </LinearLayout>
     </LinearLayout>
@@ -120,7 +121,7 @@
         android:layout_height="wrap_content"
         android:textColor="@color/white"
         android:textSize="30sp"
-        android:text="YOU LOSE!"
+        android:text="ANDA KALAH!"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"/>
 

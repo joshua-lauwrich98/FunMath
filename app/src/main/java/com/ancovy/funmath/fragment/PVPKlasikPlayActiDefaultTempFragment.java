@@ -65,7 +65,7 @@ public class PVPKlasikPlayActiDefaultTempFragment extends Fragment {
         new CountDownTimer(60000, 100) {
             @Override
             public void onTick(long l) {
-                String text = String.format(Locale.getDefault(), "00:%d:%d", l/1000, (l%1000)/1000);
+                String text = String.format(Locale.getDefault(), "00:%d:%d", l/1000, (l%1000)/100);
                 timer.setText(text);
             }
 
@@ -73,7 +73,7 @@ public class PVPKlasikPlayActiDefaultTempFragment extends Fragment {
             public void onFinish() {
 
             }
-        };
+        }.start();
 
         getFragmentManager().beginTransaction().replace(R.id.default_pvp_klasik_temp, new PVPKlasikSoalPlayActi1Fragment()).commit();
 

@@ -72,7 +72,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
                 isPasswordVisible = !isPasswordVisible;
 
                 //change image
-                visibility.setImageDrawable(getResources().getDrawable(isPasswordVisible ? R.drawable.visibility_off_icon : R.drawable.visibility_icon));
+                visibility.setImageResource(isPasswordVisible ? R.drawable.visibility_off_icon : R.drawable.visibility_icon);
 
                 //apply input type
                 passInput.setInputType(isPasswordVisible ? InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD : InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);

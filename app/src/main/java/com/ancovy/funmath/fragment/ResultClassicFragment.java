@@ -1,14 +1,17 @@
 package com.ancovy.funmath.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.ancovy.funmath.R;
+import com.ancovy.funmath.activity.MainActivity2;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -20,7 +23,7 @@ import com.google.firebase.database.ValueEventListener;
  * Created by DarKnight98 on 4/28/2017.
  */
 
-public class ResultClassicFragment extends Fragment {
+public class ResultClassicFragment extends Fragment implements View.OnClickListener {
 
     private FirebaseAuth firebaseAuth;
     private DatabaseReference databaseReference;
@@ -50,6 +53,15 @@ public class ResultClassicFragment extends Fragment {
             }
         });
 
+        Button ok = (Button)view.findViewById(R.id.ok_button_result_klasik);
+        ok.setOnClickListener(this);
+
         return view;
+    }
+
+    @Override
+    public void onClick(View view) {
+        startActivity(new Intent(getActivity(), MainActivity2.class));
+        getActivity().finish();
     }
 }

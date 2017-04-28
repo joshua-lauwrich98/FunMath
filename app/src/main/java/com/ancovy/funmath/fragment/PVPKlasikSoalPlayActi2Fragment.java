@@ -7,7 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
 
 import com.ancovy.funmath.R;
 import com.google.firebase.auth.FirebaseAuth;
@@ -21,24 +20,24 @@ import com.google.firebase.database.ValueEventListener;
  * Created by DarKnight98 on 4/28/2017.
  */
 
-public class PVPKlasikSoalPlayActi1Fragment extends Fragment implements View.OnClickListener {
+public class PVPKlasikSoalPlayActi2Fragment extends Fragment implements View.OnClickListener {
 
     private DatabaseReference databaseReference;
     private FirebaseAuth firebaseAuth;
-    private Button pil1;
+    private Button pil3;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_pvp_klasik_soal_play_acti1, container, false);
+        View view = inflater.inflate(R.layout.fragment_pvp_klasik_soal_play_acti2, container, false);
 
         firebaseAuth = FirebaseAuth.getInstance();
         databaseReference = FirebaseDatabase.getInstance().getReference().child("User").child(firebaseAuth.getCurrentUser().getUid()).child("poin");
 
-        pil1 = (Button)view.findViewById(R.id.pilihan_1_pvp_klasik_play1);
-        Button pil2 = (Button)view.findViewById(R.id.pilihan_2_pvp_klasik_play1);
-        Button pil3 = (Button)view.findViewById(R.id.pilihan_3_pvp_klasik_play1);
-        Button pil4 = (Button)view.findViewById(R.id.pilihan_4_pvp_klasik_play1);
+        pil3 = (Button)view.findViewById(R.id.pilihan_3_pvp_klasik_play2);
+        Button pil2 = (Button)view.findViewById(R.id.pilihan_2_pvp_klasik_play2);
+        Button pil1 = (Button)view.findViewById(R.id.pilihan_1_pvp_klasik_play2);
+        Button pil4 = (Button)view.findViewById(R.id.pilihan_4_pvp_klasik_play2);
 
         pil1.setOnClickListener(this);
         pil2.setOnClickListener(this);
@@ -51,7 +50,7 @@ public class PVPKlasikSoalPlayActi1Fragment extends Fragment implements View.OnC
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.pilihan_1_pvp_klasik_play1 :
+            case R.id.pilihan_3_pvp_klasik_play1 :
                 databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
@@ -66,8 +65,6 @@ public class PVPKlasikSoalPlayActi1Fragment extends Fragment implements View.OnC
                 break;
         }
 
-        pil1.setBackgroundResource(R.drawable.status_ready);
-
-        getFragmentManager().beginTransaction().replace(R.id.default_pvp_klasik_temp, new PVPKlasikSoalPlayActi2Fragment()).commit();
+        pil3.setBackgroundResource(R.drawable.status_ready);
     }
 }

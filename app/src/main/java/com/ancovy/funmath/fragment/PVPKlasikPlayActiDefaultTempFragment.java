@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -45,7 +46,7 @@ public class PVPKlasikPlayActiDefaultTempFragment extends Fragment {
         stop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                getFragmentManager().beginTransaction().replace(R.id.play_activity_container, new ResultClassicFragment()).setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE).commit();
             }
         });
 

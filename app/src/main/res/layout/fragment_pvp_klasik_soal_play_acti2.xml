@@ -5,23 +5,13 @@
     android:background="@drawable/background_sign_in"
     android:padding="20dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="2 (x + 3) = 18\nx = ..."
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="50sp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"/>
-
     <Button
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_centerInParent="true"
         android:layout_alignParentLeft="true"
-        android:id="@+id/pilihan_1_pvp_klasik_play1"
-        android:text="6"
+        android:id="@+id/pilihan_1_pvp_klasik_play2"
+        android:text="4"
         android:textSize="100sp"
         android:textAlignment="center"
         android:gravity="center"/>
@@ -31,19 +21,7 @@
         android:layout_height="150dp"
         android:layout_centerInParent="true"
         android:layout_alignParentRight="true"
-        android:id="@+id/pilihan_2_pvp_klasik_play1"
-        android:text="10"
-        android:textSize="100sp"
-        android:textAlignment="center"
-        android:gravity="center"/>
-
-    <Button
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_alignParentLeft="true"
-        android:id="@+id/pilihan_3_pvp_klasik_play1"
-        android:layout_below="@id/pilihan_1_pvp_klasik_play1"
-        android:layout_marginTop="20dp"
+        android:id="@+id/pilihan_2_pvp_klasik_play2"
         android:text="3"
         android:textSize="100sp"
         android:textAlignment="center"
@@ -52,13 +30,35 @@
     <Button
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_alignParentRight="true"
-        android:id="@+id/pilihan_4_pvp_klasik_play1"
-        android:layout_below="@id/pilihan_2_pvp_klasik_play1"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/pilihan_3_pvp_klasik_play2"
+        android:layout_below="@id/pilihan_1_pvp_klasik_play2"
         android:layout_marginTop="20dp"
-        android:text="9"
+        android:text="-4"
         android:textSize="100sp"
         android:textAlignment="center"
         android:gravity="center"/>
 
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/pilihan_4_pvp_klasik_play2"
+        android:layout_below="@id/pilihan_2_pvp_klasik_play2"
+        android:layout_marginTop="20dp"
+        android:text="-3"
+        android:textSize="100sp"
+        android:textAlignment="center"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9 + 3x + 2(x + 2) = 2x-1\nx = ..."
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:layout_above="@id/pilihan_1_pvp_klasik_play2"/>
 </RelativeLayout>

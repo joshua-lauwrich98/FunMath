@@ -38,7 +38,7 @@ public class PVPKlasikPlayActi extends Fragment {
 
             @Override
             public void onFinish() {
-                getFragmentManager().beginTransaction().replace(R.id.play_activity_container, new PVPKlasikSoalPlayActi1Fragment()).commit();
+                getFragmentManager().beginTransaction().replace(R.id.play_activity_container, new PVPKlasikPlayActiDefaultTempFragment()).commit();
             }
         }.start();
 

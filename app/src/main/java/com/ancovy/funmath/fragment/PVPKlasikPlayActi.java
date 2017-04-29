@@ -28,10 +28,10 @@ public class PVPKlasikPlayActi extends Fragment {
 
             @Override
             public void onTick(long l) {
-                if (l > 1000) {
+                if (l > 2000) {
                     text.setText((l / 1000) - 1 + "");
                 } else {
-                    text.setTextSize(25);
+                    text.setTextSize(100);
                     text.setText("START");
                 }
             }

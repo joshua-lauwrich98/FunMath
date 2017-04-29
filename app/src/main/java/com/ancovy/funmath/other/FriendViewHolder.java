@@ -16,11 +16,13 @@ import com.squareup.picasso.Picasso;
 public class FriendViewHolder extends RecyclerView.ViewHolder {
 
     private View mView;
+    public ImageView icon;
 
     public FriendViewHolder(View itemView) {
         super(itemView);
 
         this.mView = itemView;
+        this.icon = (ImageView)mView.findViewById(R.id.user_status_icon);
     }
 
     public void setUsername (String username) {
@@ -34,9 +36,10 @@ public class FriendViewHolder extends RecyclerView.ViewHolder {
     }
 
     public void setIcon (String status) {
-        ImageView icon = (ImageView)mView.findViewById(R.id.user_status_icon);
         if (status.equals("online")) {
             icon.setImageResource(R.drawable.status_online);
+        } else if (status.equals("pending")) {
+            icon.setImageResource(R.drawable.ic_add_box_black_24dp);
         } else {
             icon.setImageResource(R.drawable.status_offline);
         }
@@ -46,6 +49,8 @@ public class FriendViewHolder extends RecyclerView.ViewHolder {
         TextView timeTV = (TextView)mView.findViewById(R.id.user_status);
         if (time.equals("0")) {
             timeTV.setText("Tersedia");
+        } else if (time.equals("-1")) {
+            timeTV.setText("Permintaan Pertemanan");
         } else {
             int waktu = Integer.parseInt(time)/60;
             if (waktu == 0) {

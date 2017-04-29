@@ -64,7 +64,6 @@ public class TeacherTypeAccountFragment extends Fragment implements View.OnClick
                 SharedPreferences.Editor sp = getActivity().getSharedPreferences("userInfo", Context.MODE_PRIVATE).edit();
                 sp.putString("school_code", schoolCode.getText().toString());
                 sp.apply();
-                Toast.makeText(getActivity(), "SUCCESS", Toast.LENGTH_SHORT).show();
 
         }
     }
@@ -77,7 +76,6 @@ public class TeacherTypeAccountFragment extends Fragment implements View.OnClick
                 SharedPreferences.Editor sp = getActivity().getSharedPreferences("userInfo", Context.MODE_PRIVATE).edit();
                 sp.putString("school_code", code);
                 sp.apply();
-                Toast.makeText(getActivity(), "SUCCESS", Toast.LENGTH_SHORT).show();
             }
         }
     }

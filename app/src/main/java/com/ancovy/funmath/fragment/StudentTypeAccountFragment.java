@@ -104,6 +104,5 @@ public class StudentTypeAccountFragment extends Fragment implements AdapterView.
         SharedPreferences.Editor sp = getActivity().getSharedPreferences("userInfo", Context.MODE_PRIVATE).edit();
         sp.putString(key, content);
         sp.apply();
-        Toast.makeText(getActivity(), "SUCCESS", Toast.LENGTH_SHORT).show();
     }
 }

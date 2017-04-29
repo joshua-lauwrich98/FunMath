@@ -18,4 +18,6 @@
     <color name="grey">#B0BEC5</color>
     <color name="purple">#B39DDB</color>
     <color name="pink">#F48FB1</color>
+
+    <color name="transparent">#00000000</color>
 </resources>

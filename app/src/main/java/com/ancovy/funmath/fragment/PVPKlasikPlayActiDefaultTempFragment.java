@@ -71,7 +71,7 @@ public class PVPKlasikPlayActiDefaultTempFragment extends Fragment {
 
             @Override
             public void onFinish() {
-
+                getFragmentManager().beginTransaction().replace(R.id.play_activity_container, new ResultClassicFragment()).setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE).commit();
             }
         }.start();
 

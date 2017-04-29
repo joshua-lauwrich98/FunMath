@@ -8,8 +8,11 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.ancovy.funmath.R;
+import com.ancovy.funmath.other.CustomAlertDialogProfileAddFriend;
 import com.ancovy.funmath.other.Friend;
 import com.ancovy.funmath.other.FriendViewHolder;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
@@ -39,6 +42,15 @@ public class FriendListProfileFragment extends Fragment {
         firebaseAuth = FirebaseAuth.getInstance();
         databaseReference = FirebaseDatabase.getInstance().getReference().child("FriendList");
 
+        ImageButton addFriend = (ImageButton) view.findViewById(R.id.add_friend_button_profile);
+        addFriend.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                CustomAlertDialogProfileAddFriend dialog = new CustomAlertDialogProfileAddFriend();
+                dialog.showDialog(getActivity());
+            }
+        });
+
         return view;
     }
 
@@ -53,7 +65,18 @@ public class FriendListProfileFragment extends Fragment {
                 databaseReference
         ) {
             @Override
-            protected void populateViewHolder(FriendViewHolder viewHolder, Friend model, int position) {
+            protected void populateViewHolder(FriendViewHolder viewHolder, final Friend model, int position) {
+
+                viewHolder.icon.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if (model.getStatus().equals("pending")) {
+                            databaseReference.child("000").child("status").setValue("online");
+                            databaseReference.child("000").child("time").setValue("0");
+                        }
+                    }
+                });
+
                 viewHolder.setUsername(model.getUsername());
                 viewHolder.setTime(model.getTime());
                 viewHolder.setIcon(model.getStatus());

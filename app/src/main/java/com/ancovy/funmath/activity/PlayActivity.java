@@ -6,6 +6,7 @@ import android.os.Bundle;
 
 import com.ancovy.funmath.R;
 import com.ancovy.funmath.fragment.PVPKlasikPlayActi;
+import com.ancovy.funmath.fragment.WithFriendTimeTrialPlayActi;
 
 public class PlayActivity extends AppCompatActivity {
 
@@ -19,6 +20,8 @@ public class PlayActivity extends AppCompatActivity {
 
         if (status.equals("clasic")) {
             getSupportFragmentManager().beginTransaction().replace(R.id.play_activity_container, new PVPKlasikPlayActi()).commit();
+        } else {
+            getSupportFragmentManager().beginTransaction().replace(R.id.play_activity_container, new WithFriendTimeTrialPlayActi()).commit();
         }
     }
 

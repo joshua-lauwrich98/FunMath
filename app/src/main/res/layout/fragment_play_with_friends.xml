@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_sign_in">
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_back_icon"
+        android:background="#00000000"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="20dp"
+        android:id="@+id/back_button_play_with_friends"/>
+
+    <com.ancovy.funmath.other.LemonMilkFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:text="PILIH JENIS PERMAINAN"
+        android:textColor="@color/white"
+        android:id="@+id/textView_play_mode"/>
+
+    <android.support.v4.widget.Space
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/space_play"/>
+
+    <com.ancovy.funmath.other.PiratePlunderFontButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/bg_text_circle"
+        android:text="Klasik"
+        android:textColor="@color/white"
+        android:padding="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/space_play"
+        android:textSize="12sp"
+        android:id="@+id/classic_button_with_friends"/>
+
+    <com.ancovy.funmath.other.PiratePlunderFontButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/bg_text_circle"
+        android:text="Time Trial"
+        android:textColor="@color/white"
+        android:padding="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="12sp"
+        android:id="@+id/time_trial_button_with_friends"
+        android:layout_below="@id/space_play"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Anda tidak diperkenankan bermain selaman 2 menit karena membatalkan permainan sebelumnya"
+        android:textColor="#ff9482"
+        android:textAlignment="center"
+        android:layout_margin="20dp"
+        android:id="@+id/warning_text_play"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

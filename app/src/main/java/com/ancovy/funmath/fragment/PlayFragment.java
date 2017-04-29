@@ -42,6 +42,9 @@ public class PlayFragment extends Fragment implements View.OnClickListener {
             case R.id.with_friend_button_play :
                 getFragmentManager().beginTransaction().replace(R.id.play_container, new PlayWithFriendFragment()).setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE).commit();
                 break;
+            case R.id.leaderboard_button_play :
+                getFragmentManager().beginTransaction().replace(R.id.play_container, new LeaderboardFragment()).setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE).commit();
+                break;
         }
     }
 }

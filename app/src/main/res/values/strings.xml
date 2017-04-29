@@ -10,6 +10,65 @@
     <string name="drawer_close">Close navigation drawer</string>
     <string name="bab"> Bab </string>
 
+    <string-array name="leaderboard_kategori">
+        <item> peringkat </item>
+        <item> username </item>
+        <item> score </item>
+        <item> icon </item>
+    </string-array>
+
+    <string-array name="leaderboard_peringkat">
+        <item> 1 </item>
+        <item> 2 </item>
+        <item> 3 </item>
+        <item> 4 </item>
+        <item> 5 </item>
+        <item> 6 </item>
+        <item> 7 </item>
+        <item> 8 </item>
+        <item> 9 </item>
+        <item> 10 </item>
+    </string-array>
+
+    <string-array name="leaderboard_username">
+        <item> 13rot4ut1 </item>
+        <item> DreaLot12 </item>
+        <item> RhoRhonda00 </item>
+        <item> 1Leotitu1 </item>
+        <item> 123Willard321 </item>
+        <item> gibBuz </item>
+        <item> MarkMark21 </item>
+        <item> 88Eight88 </item>
+        <item> [] </item>
+        <item> 1blank1 </item>
+    </string-array>
+
+    <string-array name="leaderboard_score">
+        <item> 160 </item>
+        <item> 160 </item>
+        <item> 150 </item>
+        <item> 120 </item>
+        <item> 120 </item>
+        <item> 100 </item>
+        <item> 90 </item>
+        <item> 80 </item>
+        <item> 80 </item>
+        <item> 70 </item>
+    </string-array>
+
+    <string-array name="leaderboard_icon">
+        <item> naik </item>
+        <item> turun </item>
+        <item> naik </item>
+        <item> turun </item>
+        <item> naik </item>
+        <item> turun </item>
+        <item> turun </item>
+        <item> naik </item>
+        <item> naik </item>
+        <item> naik </item>
+    </string-array>
+
     <string-array name="sd_class_expandable_drawer">
         <item> Kelas 1 </item>
         <item> Kelas 2 </item>

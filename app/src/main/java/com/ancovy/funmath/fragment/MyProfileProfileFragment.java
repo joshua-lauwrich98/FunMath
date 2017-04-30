@@ -32,7 +32,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class MyProfileProfileFragment extends Fragment implements View.OnClickListener {
 
-    private EditText email, username, fullname, school, grade, accType;
+    private EditText fullname, school, grade, accType;
     private Button ok;
     private ImageButton edit;
     private FirebaseAuth firebaseAuth;
@@ -51,8 +51,6 @@ public class MyProfileProfileFragment extends Fragment implements View.OnClickLi
         firebaseAuth = FirebaseAuth.getInstance();
         databaseReference = FirebaseDatabase.getInstance().getReference().child("User").child(firebaseAuth.getCurrentUser().getUid());
 
-        email = (EditText)view.findViewById(R.id.email_edit_profile);
-        username = (EditText)view.findViewById(R.id.username_edit_profile);
         fullname = (EditText)view.findViewById(R.id.fullname_edit_profile);
         school = (EditText)view.findViewById(R.id.school_edit_profile);
         grade = (EditText)view.findViewById(R.id.grade_edit_profile);
@@ -67,8 +65,6 @@ public class MyProfileProfileFragment extends Fragment implements View.OnClickLi
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                email.setText(dataSnapshot.child("email").getValue().toString());
-                username.setText(dataSnapshot.child("username").getValue().toString());
                 fullname.setText(dataSnapshot.child("fullname").getValue().toString());
                 school.setText(dataSnapshot.child("school").getValue().toString());
                 grade.setText(dataSnapshot.child("grade").getValue().toString());
@@ -90,32 +86,22 @@ public class MyProfileProfileFragment extends Fragment implements View.OnClickLi
         switch (view.getId()) {
             case R.id.edit_button_profile :
 
-                email.getBackground().setColorFilter(getResources().getColor(R.color.white), PorterDuff.Mode.SRC_ATOP);
-                username.getBackground().setColorFilter(getResources().getColor(R.color.white), PorterDuff.Mode.SRC_ATOP);
                 fullname.getBackground().setColorFilter(getResources().getColor(R.color.white), PorterDuff.Mode.SRC_ATOP);
                 school.getBackground().setColorFilter(getResources().getColor(R.color.white), PorterDuff.Mode.SRC_ATOP);
                 grade.getBackground().setColorFilter(getResources().getColor(R.color.white), PorterDuff.Mode.SRC_ATOP);
 
-                email.setClickable(true);
-                username.setClickable(true);
                 fullname.setClickable(true);
                 school.setClickable(true);
                 grade.setClickable(true);
 
-                email.setCursorVisible(true);
-                username.setCursorVisible(true);
                 fullname.setCursorVisible(true);
                 school.setCursorVisible(true);
                 grade.setCursorVisible(true);
 
-                email.setFocusable(true);
-                username.setFocusable(true);
                 fullname.setFocusable(true);
                 school.setFocusable(true);
                 grade.setFocusable(true);
 
-                email.setFocusableInTouchMode(true);
-                username.setFocusableInTouchMode(true);
                 fullname.setFocusableInTouchMode(true);
                 school.setFocusableInTouchMode(true);
                 grade.setFocusableInTouchMode(true);
@@ -159,8 +145,6 @@ public class MyProfileProfileFragment extends Fragment implements View.OnClickLi
 //                ok.setVisibility(View.INVISIBLE);
 //                edit.setVisibility(View.VISIBLE);
 
-                databaseReference.child("email").setValue(email.getText().toString());
-                databaseReference.child("username").setValue(username.getText().toString());
                 databaseReference.child("fullname").setValue(fullname.getText().toString());
                 databaseReference.child("school").setValue(school.getText().toString());
                 databaseReference.child("grade").setValue(grade.getText().toString());

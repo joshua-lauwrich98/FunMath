@@ -66,4 +66,17 @@
         android:layout_marginLeft="35dp"
         android:layout_marginStart="35dp"/>
 
+    <com.ancovy.funmath.other.LemonMilkFontButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/leaderboard_button_play"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="15dp"
+        android:text="Tantangan Baru !"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:background="#ff3700"
+        android:visibility="invisible"
+        android:id="@+id/new_challange_play_button"/>
+
 </RelativeLayout>

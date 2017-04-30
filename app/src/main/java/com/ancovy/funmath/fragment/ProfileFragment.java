@@ -14,6 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.ancovy.funmath.R;
+import com.ancovy.funmath.activity.SettingsActivity;
 import com.ancovy.funmath.other.CustomAlertDialogProfileUsernameEdit;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -31,7 +32,7 @@ import com.theartofdev.edmodo.cropper.CropImageView;
 public class ProfileFragment extends Fragment implements View.OnClickListener {
 
     private static final int GALERY_CODE = 1;
-    private ImageButton profilImage;
+    private ImageButton profilImage, settingButton;
     private Uri resultUri;
     private DatabaseReference databaseReference;
     private FirebaseAuth firebaseAuth;
@@ -44,6 +45,9 @@ public class ProfileFragment extends Fragment implements View.OnClickListener {
 
         profilImage = (ImageButton)view.findViewById(R.id.choose_profil_image_button);
         profilImage.setOnClickListener(this);
+
+        settingButton = (ImageButton)view.findViewById(R.id.setting_button_profile);
+        settingButton.setOnClickListener(this);
 
         final TextView username = (TextView)view.findViewById(R.id.username_profil_textview);
         username.setOnClickListener(this);
@@ -100,6 +104,10 @@ public class ProfileFragment extends Fragment implements View.OnClickListener {
             case R.id.own_profile_button_profle :
                 getChildFragmentManager().beginTransaction().replace(R.id.profile_detail_container, new MyProfileProfileFragment()).commit();
                 break;
+            case R.id.setting_button_profile :
+                Intent intent = new Intent(getActivity(), SettingsActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
         }
     }
 

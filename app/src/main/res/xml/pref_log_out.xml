@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <com.ancovy.funmath.other.SeekBarPreference
+        android:defaultValue="50"
+        android:key="SEEKBAR_VALUE"
+        android:max="255"
+        android:summary="@string/settings_summary"
+        android:title="RED" />
+</PreferenceScreen>

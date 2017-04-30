@@ -34,8 +34,13 @@
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />
-        <activity android:name=".activity.PlayActivity"
-            android:theme="@style/AppTheme.NoTitle"/>
+        <activity
+            android:name=".activity.PlayActivity"
+            android:theme="@style/AppTheme.NoTitle" />
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity android:name=".activity.TemaActivity"></activity>
     </application>
 
 </manifest>

@@ -11,6 +11,15 @@
         android:text="Kesimpulan"
         android:textColor="@color/white"
         android:textSize="20sp"
-        android:backgroundTint="@color/white"/>
+        android:backgroundTint="@color/white"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""/>
 
 </RelativeLayout>

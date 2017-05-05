@@ -1,5 +1,6 @@
 package com.ancovy.funmath.activity;
 
+import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
 
@@ -12,6 +13,7 @@ import android.view.MenuItem;
 import com.ancovy.funmath.R;
 import com.ancovy.funmath.other.CustomAlertDialog;
 import com.ancovy.funmath.adapter.SectionsPagerAdapter;
+import com.ancovy.funmath.other.NotificationService;
 
 public class MainActivity2 extends AppCompatActivity {
 
@@ -48,6 +50,9 @@ public class MainActivity2 extends AppCompatActivity {
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
+
+        Intent i = new Intent(this, NotificationService.class);
+        startService(i);
     }
 
 

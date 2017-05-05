@@ -15,11 +15,153 @@
         android:clickable="false"
         android:cursorVisible="false"
         android:focusable="false"
-        android:focusableInTouchMode="false"/>
+        android:focusableInTouchMode="false"
+        android:id="@+id/kesimpulan_id"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""/>
+        android:text="Total permainan :"
+        android:textColor="@color/white"
+        android:layout_below="@id/kesimpulan_id"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/games_played_text"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="354"
+        android:textColor="@color/white"
+        android:layout_below="@id/kesimpulan_id"
+        android:layout_toRightOf="@id/games_played_text"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/games_played_result"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total kemenangan :"
+        android:textColor="@color/white"
+        android:layout_below="@id/games_played_text"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/total_win_text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="250"
+        android:textColor="@color/white"
+        android:layout_below="@id/games_played_result"
+        android:layout_toRightOf="@id/total_win_text"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/total_win_result"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total kekalahan :"
+        android:textColor="@color/white"
+        android:layout_below="@id/total_win_text"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/total_lose_text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="104"
+        android:textColor="@color/white"
+        android:layout_below="@id/total_win_result"
+        android:layout_toRightOf="@id/total_lose_text"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/total_lose_result"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total pengerjaan latihan :"
+        android:textColor="@color/white"
+        android:layout_below="@id/total_lose_text"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/total_latihan_text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="42"
+        android:textColor="@color/white"
+        android:layout_below="@id/total_lose_result"
+        android:layout_toRightOf="@id/total_latihan_text"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/total_latihan_result"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nilai terbaik PvP :"
+        android:textColor="@color/white"
+        android:layout_below="@id/total_latihan_text"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/total_pvp_nilai_text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="104"
+        android:textColor="@color/white"
+        android:layout_below="@id/total_latihan_result"
+        android:layout_toRightOf="@id/total_pvp_nilai_text"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/total_pvp_nilai_result"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nilai terbaik Time Trial :"
+        android:textColor="@color/white"
+        android:layout_below="@id/total_pvp_nilai_text"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/total_time_trial_nilai_text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="30 detik"
+        android:textColor="@color/white"
+        android:layout_below="@id/total_pvp_nilai_result"
+        android:layout_toRightOf="@id/total_time_trial_nilai_text"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/total_time_trial_nilai_result"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nilai terbaik Class Challange :"
+        android:textColor="@color/white"
+        android:layout_below="@id/total_time_trial_nilai_text"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/total_challange_nilai_text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="70"
+        android:textColor="@color/white"
+        android:layout_below="@id/total_time_trial_nilai_result"
+        android:layout_toRightOf="@id/total_challange_nilai_text"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/total_challange_nilai_result"/>
 </RelativeLayout>

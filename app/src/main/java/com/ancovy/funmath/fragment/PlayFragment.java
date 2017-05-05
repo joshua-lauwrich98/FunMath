@@ -47,7 +47,7 @@ public class PlayFragment extends Fragment implements View.OnClickListener {
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                if (dataSnapshot.getValue().toString().equals("ya")) {
+                if (dataSnapshot.getValue().toString().equals("yes")) {
                     newChallange.setVisibility(View.VISIBLE);
                 } else {
                     newChallange.setVisibility(View.INVISIBLE);

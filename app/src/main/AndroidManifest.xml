@@ -40,7 +40,16 @@
         <activity
             android:name=".activity.SettingsActivity"
             android:label="@string/title_activity_settings" />
-        <activity android:name=".activity.TemaActivity"></activity>
+        <activity android:name=".activity.TemaActivity" />
+        <activity
+            android:name=".activity.Main5Activity"
+            android:label="@string/title_activity_main5"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".other.NotificationService"
+            android:enabled="true"
+            android:exported="true"></service>
     </application>
 
 </manifest>

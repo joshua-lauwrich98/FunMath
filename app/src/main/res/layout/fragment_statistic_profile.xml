@@ -8,7 +8,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Kesimpulan"
+        android:text="Umum"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:backgroundTint="@color/white"
@@ -164,4 +164,103 @@
         android:layout_marginTop="10dp"
         android:layout_marginLeft="5dp"
         android:id="@+id/total_challange_nilai_result"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total waktu belajar :"
+        android:textColor="@color/white"
+        android:layout_below="@id/total_challange_nilai_text"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/total_belajar_nilai_text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10 hari 5 jam 6 menit"
+        android:textColor="@color/white"
+        android:layout_below="@id/total_challange_nilai_result"
+        android:layout_toRightOf="@id/total_belajar_nilai_text"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/total_belajar_nilai_result"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PvP"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:backgroundTint="@color/white"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_below="@id/total_belajar_nilai_text"
+        android:layout_marginTop="20dp"
+        android:id="@+id/pvp_id"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total permainan :"
+        android:textColor="@color/white"
+        android:layout_below="@id/pvp_id"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/total_main_pvp_nilai_text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:textColor="@color/white"
+        android:layout_below="@id/pvp_id"
+        android:layout_toRightOf="@id/total_main_pvp_nilai_text"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/total_main_pvp_nilai_result"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total kemenangan :"
+        android:textColor="@color/white"
+        android:layout_below="@id/total_main_pvp_nilai_text"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/total_win_pvp_text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="60"
+        android:textColor="@color/white"
+        android:layout_below="@id/total_main_pvp_nilai_result"
+        android:layout_toRightOf="@id/total_win_pvp_text"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/total_win_pvp_result"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total kekalahan :"
+        android:textColor="@color/white"
+        android:layout_below="@id/total_win_pvp_text"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/total_lose_pvp_text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="40"
+        android:textColor="@color/white"
+        android:layout_below="@id/total_win_pvp_result"
+        android:layout_toRightOf="@id/total_lose_pvp_text"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/total_lose_pvp_result"/>
 </RelativeLayout>

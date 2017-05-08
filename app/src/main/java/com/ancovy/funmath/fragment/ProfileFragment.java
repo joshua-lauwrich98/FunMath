@@ -104,6 +104,9 @@ public class ProfileFragment extends Fragment implements View.OnClickListener {
             case R.id.own_profile_button_profle :
                 getChildFragmentManager().beginTransaction().replace(R.id.profile_detail_container, new MyProfileProfileFragment()).commit();
                 break;
+            case R.id.statistic_button_profile :
+                getChildFragmentManager().beginTransaction().replace(R.id.profile_detail_container, new StatisticProfileFragment()).commit();
+                break;
             case R.id.setting_button_profile :
                 Intent intent = new Intent(getActivity(), SettingsActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

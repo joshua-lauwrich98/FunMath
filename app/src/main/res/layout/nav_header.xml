@@ -44,5 +44,6 @@
         android:paddingLeft="@dimen/layout_padding_default"
         android:text="@string/website"
         android:textColor="@color/white"
+        android:textStyle="bold"
         android:textSize="@dimen/header_font_size"/>
 </LinearLayout>

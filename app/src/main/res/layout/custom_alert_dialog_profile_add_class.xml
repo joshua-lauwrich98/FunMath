@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#3E80B4"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingEnd="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingStart="20dp"
+    android:paddingTop="10dp"
+    android:gravity="center">
+
+    <com.ancovy.funmath.other.SimplificaFontTextView
+        android:id="@+id/txt_dia1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="Masukan id kelas :"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*id dapat diperoleh dari guru pembuat kelas"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#ffffff"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:id="@+id/class_id_input"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.ancovy.funmath.other.LemonMilkFontButton
+            android:id="@+id/ok_button_add_class"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@android:color/white"
+            android:clickable="true"
+            android:text="Ok"
+            android:textSize="18sp"
+            android:textColor="#5DBCD2"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"/>
+
+        <com.ancovy.funmath.other.LemonMilkFontButton
+            android:id="@+id/cancel_button_add_class"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@android:color/white"
+            android:clickable="true"
+            android:text="Batalkan"
+            android:textSize="18sp"
+            android:textColor="#5DBCD2"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -2,6 +2,9 @@ package com.ancovy.funmath.activity;
 
 import android.content.Intent;
 import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v7.app.AppCompatActivity;
 
 import android.support.v4.app.FragmentPagerAdapter;
@@ -11,8 +14,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.ancovy.funmath.R;
+import com.ancovy.funmath.fragment.ClassFragment;
+import com.ancovy.funmath.fragment.PersonalFragmentRoot;
+import com.ancovy.funmath.fragment.PlayFragmentRoot;
+import com.ancovy.funmath.fragment.ProfileFragmentRoot;
 import com.ancovy.funmath.other.CustomAlertDialog;
-import com.ancovy.funmath.adapter.SectionsPagerAdapter;
 import com.ancovy.funmath.other.NotificationService;
 
 public class MainActivity2 extends AppCompatActivity {
@@ -83,4 +89,52 @@ public class MainActivity2 extends AppCompatActivity {
         CustomAlertDialog dialog = new CustomAlertDialog();
         dialog.showDialog(this);
     }
+
+    class SectionsPagerAdapter extends FragmentStatePagerAdapter {
+
+        SectionsPagerAdapter(FragmentManager fm) {
+            super(fm);
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+            // getItem is called to instantiate the fragment for the given page.
+            // Return a PlaceholderFragment (defined as a static inner class below).
+            //return PlaceholderFragment.newInstance(position + 1);
+            switch (position) {
+                case 0 :
+                    return new PersonalFragmentRoot();
+                case 1 :
+                    return new PlayFragmentRoot();
+                case 2 :
+                    return new ClassFragment();
+                case 3 :
+                    return new ProfileFragmentRoot();
+                default :
+                    return new PlayFragmentRoot();
+            }
+        }
+
+        @Override
+        public int getCount() {
+            // Show 3 total pages.
+            return 4;
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+            switch (position) {
+                case 0:
+                    return "Personal";
+                case 1:
+                    return "Main";
+                case 2:
+                    return "Kelas";
+                case 3:
+                    return "Profil";
+            }
+            return null;
+        }
+    }
+
 }

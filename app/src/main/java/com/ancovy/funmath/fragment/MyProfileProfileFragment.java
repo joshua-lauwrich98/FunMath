@@ -16,6 +16,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.ancovy.funmath.R;
@@ -46,7 +47,7 @@ public class MyProfileProfileFragment extends Fragment implements View.OnClickLi
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_own_profile_profile, container, false);
+        final View view = inflater.inflate(R.layout.fragment_own_profile_profile, container, false);
 
         firebaseAuth = FirebaseAuth.getInstance();
         databaseReference = FirebaseDatabase.getInstance().getReference().child("User").child(firebaseAuth.getCurrentUser().getUid());
@@ -69,6 +70,10 @@ public class MyProfileProfileFragment extends Fragment implements View.OnClickLi
                 school.setText(dataSnapshot.child("school").getValue().toString());
                 grade.setText(dataSnapshot.child("grade").getValue().toString());
                 accType.setText(dataSnapshot.child("accType").getValue().toString());
+                TextView email = (TextView) view.findViewById(R.id.email_edit_profile);
+                TextView username = (TextView) view.findViewById(R.id.username_edit_profile);
+                email.setText(dataSnapshot.child("email").getValue().toString());
+                username.setText(dataSnapshot.child("username").getValue().toString());
             }
 
             @Override

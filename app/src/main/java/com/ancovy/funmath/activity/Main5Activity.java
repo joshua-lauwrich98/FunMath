@@ -42,7 +42,8 @@ public class Main5Activity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        getSupportActionBar().setTitle("FunMath");
+        getSupportActionBar().setTitle("Kelas 1");
+        getSupportFragmentManager().beginTransaction().replace(R.id.content_main5, new AnnouncementFragment()).commit();
     }
 
     @Override
@@ -96,6 +97,8 @@ public class Main5Activity extends AppCompatActivity
             getSupportFragmentManager().beginTransaction().replace(R.id.content_main5, new ForumFragment()).commit();
         } else if (id == R.id.class_make_question) {
             getSupportFragmentManager().beginTransaction().replace(R.id.content_main5, new ForumAddFragment()).commit();
+        } else {
+            getSupportFragmentManager().beginTransaction().replace(R.id.content_main5, new AnnouncementFragment()).commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

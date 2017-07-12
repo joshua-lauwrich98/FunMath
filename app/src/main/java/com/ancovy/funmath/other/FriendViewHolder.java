@@ -51,6 +51,8 @@ public class FriendViewHolder extends RecyclerView.ViewHolder {
             timeTV.setText("Tersedia");
         } else if (time.equals("-1")) {
             timeTV.setText("Permintaan Pertemanan");
+        } else if (time.equals("-2")) {
+            timeTV.setText("Permintaan Terkirim");
         } else {
             int waktu = Integer.parseInt(time)/60;
             if (waktu == 0) {

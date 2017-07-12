@@ -190,5 +190,6 @@ public class Main4Activity extends AppCompatActivity {
     public void onBackPressed() {
         super.onBackPressed();
         startActivity(new Intent(Main4Activity.this, MainActivity2.class));
+        this.finish();
     }
 }

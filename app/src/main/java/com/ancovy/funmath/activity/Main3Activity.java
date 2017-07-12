@@ -7,6 +7,7 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -17,6 +18,7 @@ import android.widget.ExpandableListView;
 import com.ancovy.funmath.R;
 import com.ancovy.funmath.adapter.CustomExpandableListAdapter;
 import com.ancovy.funmath.datasource.ExpandableListDataSource;
+import com.ancovy.funmath.fragment.FragmentAction;
 import com.ancovy.funmath.fragment.navigation.FragmentNavigationManager;
 import com.ancovy.funmath.fragment.navigation.NavigationManager;
 
@@ -189,6 +191,12 @@ public class Main3Activity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        startActivity(new Intent(Main3Activity.this, MainActivity2.class));
+        if (mDrawerLayout.isDrawerOpen(GravityCompat.START)) {
+            mDrawerLayout.closeDrawer(GravityCompat.START);
+            getSupportFragmentManager().beginTransaction().replace(R.id.container, FragmentAction.newInstance("Fun Math")).commit();
+        } else {
+            startActivity(new Intent(Main3Activity.this, MainActivity2.class));
+            this.finish();
+        }
     }
 }

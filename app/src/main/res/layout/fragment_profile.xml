@@ -75,8 +75,8 @@
             <ImageButton
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/statistic"
-                android:scaleType="fitCenter"
+                android:src="@drawable/ic_launcher_statistic"
+                android:scaleType="centerCrop"
                 android:id="@+id/statistic_button_profile"/>
 
         </LinearLayout>

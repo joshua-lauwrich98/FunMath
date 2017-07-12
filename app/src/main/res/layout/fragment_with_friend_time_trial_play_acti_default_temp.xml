@@ -5,6 +5,12 @@
     android:background="@drawable/background_sign_in"
     android:padding="20dp">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tingkat soal :\nSD Kelas 3"
+        android:textColor="@color/white"/>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
